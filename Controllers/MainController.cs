@@ -11,11 +11,10 @@ namespace TimeDisplay.Controllers
         [Route("")]
         public IActionResult Index()
         {
+            // This is how we would do this stuff on the server.
             // DateTime RightNow = DateTime.Now;
             // string Date = RightNow.ToString("MMM dd, yyyy");
-            // string Time = RightNow.ToString("HH:MM tt");
-            // Console.WriteLine(Date);
-            // Console.WriteLine(Time);
+            // string Time = DateTime.Now.ToString("h:mm:ss tt");
             // ViewBag.TheTime = Time;
             // ViewBag.TheDate = Date;
             return View();

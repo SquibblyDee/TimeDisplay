@@ -14,13 +14,10 @@
             @{
                 DateTime RightNow = DateTime.Now;
                 string Date = RightNow.ToString("MMM dd, yyyy");
-                string Time = RightNow.ToString("HH:MM tt");
+                string Time = DateTime.Now.ToString("h:mm:ss tt");
             }
-            <h1>@Time</h1>
             <h1>@Date</h1>
-            
-            <!-- <h1>@ViewBag.TheDate</h1> -->
-            <!-- <h1>@ViewBag.TheTime</h1> -->
+            <h1>@Time</h1>
         </div>
     </body>
 </html>
